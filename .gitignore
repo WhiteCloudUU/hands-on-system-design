@@ -1,1 +1,27 @@
 venv
+# Compiled files
+**/target/
+
+# Cargo package output
+**/*.rs.bk
+
+# Backup and temp files
+*.swp
+*.swo
+*.tmp
+*.log
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDE / Editor specific
+# VS Code
+.vscode/
+
+# Other tools
+.env
+.env.*

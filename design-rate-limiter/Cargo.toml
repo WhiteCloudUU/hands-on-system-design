@@ -1,0 +1,11 @@
+[package]
+name = "design-rate-limiter"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4"
+async-trait = "0.1.89"
+dashmap = "6.1.0"
+futures-util = "0.3.31"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }

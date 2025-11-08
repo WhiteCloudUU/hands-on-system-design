@@ -1,0 +1,7 @@
+Simple upload
+"When a client wants to upload a file, instead of receiving the entire file, your server just receives a request for upload permission. You validate the user, check quotas, then generate a temporary upload URL. This URL encodes permission to upload one specific file to one specific location for a limited time - typically 15 minutes to 1 hour. This is called a presigned URL.
+Generating a presigned URL happens entirely in your application's memory - no network call to blob storage needed. Your server uses its cloud credentials to create a signature that the storage service can verify later.
+The client performs a simple HTTP PUT to this URL with the file in the request body. From their perspective, they're uploading directly to storage. Your infrastructure never touches the bytes. That Sydney user uploads to Sydney's blob storage region at full speed while your servers in Virginia handle other requests."
+
+Resumable Uploads
+Implement resumable uploads using Azure.
